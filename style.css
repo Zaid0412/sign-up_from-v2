@@ -123,6 +123,5 @@ input[type="password"]:invalid {
 }
 
 input[type="password"]:valid {
-  /* outline: 1px solid green; */
-  background-color: green;
+  outline: 1px solid green;
 }
