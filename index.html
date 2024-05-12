@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <div class="logo-container">
+        <img src="./imgs/odin_logo.png" alt="Odin Logo" />
+        <h1>ODIN</h1>
+      </div>
+      <div class="form-container">
+        <form action="">
+          <div class="first-name-cnt">
+            <label for="first-name">First Name</label>
+            <input required type="text" name="first-name" id="first-name" />
+          </div>
+
+          <div class="last-name-cnt">
+            <label for="last-name">Last Name</label>
+            <input required type="text" id="last-name" id="last-name" />
+          </div>
+
+          <div class="email-cnt">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" />
+          </div>
+
+          <div class="phone-num-cnt">
+            <label for="phone-num">Phone Number</label>
+            <input required type="tel" name="phone-num" id="phone-num" />
+          </div>
+
+          <div class="password-cnt">
+            <label for="password">Password</label>
+            <input
+              minlength="8"
+              required
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+
+          <div class="confirm-password-cnt">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              required
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+
+          <button type="submit" id="create-account-btn">Create Account</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

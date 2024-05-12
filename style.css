@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("fonts/Norse-Bold.otf") format("otf");
+}
+
+body {
+  background-image: url("./imgs/mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+}
+
+h1 {
+  font-family: Norse;
+  font-size: 75px;
+  color: white;
+}
+
+:root {
+  --white: #ededed;
+  --primary-black: #1f2029;
+}
+
+#main-container {
+  width: 900px;
+  height: 500px;
+  box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  display: flex;
+}
+
+.logo-container {
+  width: 350px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(150%);
+}
+
+.form-container {
+  width: 550px;
+  background-color: var(--white);
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 1);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 550px;
+  height: 500px;
+  gap: 19px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+form div {
+  flex: auto;
+  width: 250px;
+}
+
+form label {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#create-account-btn {
+  /* font-size: 15px; */
+  width: 175px;
+  height: 65px;
+  border: 2.5px solid var(--primary-black);
+  background-color: var(--white);
+
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.45);
+
+  margin-left: -75px;
+  /* margin-top: -50px; */
+}
+
+#create-account-btn:hover {
+  background-color: var(--primary-black);
+  color: var(--white);
+  border: 2.5px solid var(--white);
+}
+
+input {
+  outline: 1px solid #c4c4c4;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+
+input[type="password"]:invalid {
+  outline: 1px solid #b50101;
+}
+
+input[type="password"]:valid {
+  /* outline: 1px solid green; */
+  background-color: green;
+}
